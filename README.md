@@ -10,10 +10,8 @@ npm run dev
 
 Then open the local URL shown by Vite.
 
-## Before deploying
-
 
 
 ## Deploy
-
+https://portfolio-beta-weld-spthmgdqc1.vercel.app/
 
