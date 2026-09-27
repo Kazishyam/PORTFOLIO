@@ -27,7 +27,17 @@ function App() {
         <p className="eyebrow">B.Tech CSE · Developer</p>
         <h1>Hi, I'm <span>{profile.name}</span>.<br/>I build things for the web.</h1>
         <p className="hero-text">{profile.role}. I enjoy building practical applications, learning new technologies, and turning ideas into working software.</p>
-        <div className="actions"><a className="primary" href="#projects">View my work <b>↗</b></a><a className="secondary" href={`mailto:${profile.email}`}>Contact me</a></div>
+        <div className="actions">
+          <a className="primary" href="#projects">View my work <b>↗</b></a>
+          <a className="secondary" href={`mailto:${profile.email}`}>Contact me</a>
+          <a className="secondary" href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            
+            >
+              ↓ Resume
+          </a>
+        </div>
         <div className="social"><a href={profile.github} target="_blank" rel="noreferrer">GitHub</a><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a><a href={`mailto:${profile.email}`}>Email</a></div>
       </div></section>
 
@@ -44,3 +54,4 @@ function App() {
 }
 
 createRoot(document.getElementById("root")).render(<App />);
+ <Download size={17} />
